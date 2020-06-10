@@ -15,7 +15,7 @@ class Register extends React.Component {
             password: "",
             address: "",
             city: "",
-            creditCart: "",
+            creditCard: "",
 
         }
     }
@@ -30,6 +30,23 @@ class Register extends React.Component {
         })
         console.log(this.state)
     }
+
+    /*isFormValid = (name, surname, email, password, address, city, creditCard) => {
+        let error = [],
+        
+        if (name.lenght < 0) {
+            error.push("This field is empty")
+        }
+        if (surname.lenght < 0) {
+            error.push("This field is empty")
+        }
+        if (address.lenght < 0) {
+            error.push("This field is empty")
+        }
+        
+        SOLO TEST, NON VA E DA RIPROVARE
+
+      }*/
 
 
 
@@ -76,9 +93,9 @@ class Register extends React.Component {
                                 <Form.Control type="number" placeholder="Enter your credit card" />
                             </Form.Group>
 
-                            <Button variant="primary" type="submit">
+                           // <Button variant="primary" type="submit">
                                 Submit
-                </Button>
+                            </Button>
                         </Form>
                     </Col>
 
